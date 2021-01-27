@@ -1,0 +1,36 @@
+Algoritmo "estrutura-escolha"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 23/01/2021
+Var
+// Seção de Declarações das variáveis 
+   valor01, valor02, resultado: real
+  operacao: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   //escreval("A proposta desse programa é calcular dois valores baseado na opreação da sua escolha. ")
+   escreval("Digite o primeiro valor:")
+   leia(valor01)
+   escreval("Digite a operação: Ex.: + , - , * , /")
+   leia(operacao)
+   escreval("Digite o segundo valor:")
+   leia(valor02)
+   
+   escolha operacao
+     caso "+"
+      resultado := valor01 + valor02
+     caso "-"
+      resultado := valor01 - valor02
+     caso "*"
+      resultado := valor01 * valor02
+     caso "/"
+      resultado := valor01 / valor02
+   fimescolha
+
+   escreval("Resultado do calculo é: ", resultado)
+
+
+Fimalgoritmo
